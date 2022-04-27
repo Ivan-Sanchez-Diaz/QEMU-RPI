@@ -1,0 +1,1 @@
+qemu-system-arm -kernel kernel-qemu-4.4.34-jessie -cpu arm1176 -m 256 -M versatilepb -no-reboot -serial stdio -append "root=/dev/sda2 panic=1 rootfstype=ext4 rw" -drive "file=2022-04-04-raspios-buster-armhf.img" -nic user,hostfwd=tcp::2222-:22
